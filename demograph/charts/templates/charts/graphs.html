@@ -1,0 +1,33 @@
+{% extends 'charts/base.html' %}
+
+{% block content %}
+
+
+<div class="input-field col s12 ddMenus"  style="color:Violet;">
+    <select id="chart_type_ddl" >
+        <option>Graph Type</option>
+        <option title='markers' value="scatter">Scatter</option>
+        <option title='lines' value="line">Line</option>
+        <option title='lines' value="bar">Bar</option>
+        <option value="choropleth">Choropleth</option>
+        <option value="pie">Pie</option>
+    </select>
+</div>
+
+<div class="input-field col s12 ddMenus">
+    <select id="userOption1" >
+        <option>User Choice One</option>
+        <option title='year' value="year">Year</option>
+        <option title='county' value="county">County</option>
+
+    </select>
+</div>
+
+
+
+<div id="finalGraph" style="width:100%;"></div>
+<div id="choroDiv" style="width:100%;"></div>
+
+
+{% endblock %}
+
